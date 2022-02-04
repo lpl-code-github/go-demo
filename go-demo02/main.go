@@ -34,9 +34,11 @@ func main() {
 	//fmt.Printf("%T", i)
 
 	// 多重赋值
-	var conn net.Conn
-	var err error
-	conn, err = net.Dial("tcp", "127.0.0.1:8080")
+	//var conn net.Conn
+	//var err error
+	conn, err := net.Dial("tcp", "127.0.0.1:8080")  // 短变量写法
+	conn1, err := net.Dial("tcp", "127.0.0.1:8080") // 短变量写法
 	fmt.Println(conn)
+	fmt.Println(conn1)
 	fmt.Println(err)
 }
