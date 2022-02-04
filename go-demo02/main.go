@@ -41,4 +41,8 @@ func main() {
 	fmt.Println(conn)
 	fmt.Println(conn1)
 	fmt.Println(err)
+
+	// 匿名变量
+	conn2, _ := net.Dial("tcp", "127.0.0.1:8080") // 短变量写法
+	fmt.Println(conn2)
 }
