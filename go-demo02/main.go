@@ -23,5 +23,10 @@ func main() {
 	//fmt.Printf("%T", level)
 
 	// %d 整数占位符，%s 字符串占位符， %f 浮点数占位符(默认精度为6)
-	fmt.Printf("%d,%s,%f", a, b, c)
+	//fmt.Printf("%d,%s,%f", a, b, c)
+
+	// 简短格式定义
+	i := 1
+	fmt.Println(i)
+	fmt.Printf("%T", i)
 }
