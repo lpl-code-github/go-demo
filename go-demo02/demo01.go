@@ -14,9 +14,12 @@ func main() {
 	//fmt.Printf("a=%d,b=%d", a, b)
 
 	// 变量交换 第二种
-	a = a ^ b
-	b = b ^ a
-	a = a ^ b
-	fmt.Printf("a=%d,b=%d", a, b)
+	//a = a ^ b
+	//b = b ^ a
+	//a = a ^ b
+	//fmt.Printf("a=%d,b=%d", a, b)
 
+	//变量交换 第三种
+	b, a = a, b
+	fmt.Printf("a=%d,b=%d", a, b)
 }
