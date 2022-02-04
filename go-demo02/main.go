@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net"
+)
 
 // 标准格式声明变量
 var age int
@@ -26,7 +29,14 @@ func main() {
 	//fmt.Printf("%d,%s,%f", a, b, c)
 
 	// 简短格式定义
-	i := 1
-	fmt.Println(i)
-	fmt.Printf("%T", i)
+	//i := 1
+	//fmt.Println(i)
+	//fmt.Printf("%T", i)
+
+	// 多重赋值
+	var conn net.Conn
+	var err error
+	conn, err = net.Dial("tcp", "127.0.0.1:8080")
+	fmt.Println(conn)
+	fmt.Println(err)
 }
