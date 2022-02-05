@@ -16,4 +16,9 @@ func main() {
 	fmt.Printf("%c,", ch2)
 	fmt.Printf("%c,", ch3)
 	fmt.Printf("%c", ch4)
+
+	var ch5 rune = '\u0041'
+	var ch6 int64 = '\U00000041'
+	// 格式化说明符%c用于表示字符，%v或%d会输出用于表示该字符的整数，%U输出格式为 U+hhhh 的字符串。
+	fmt.Printf("%c,%c,%U", ch5, ch6, ch5)
 }
