@@ -11,4 +11,8 @@ func main() {
 	fmt.Println(`\t java
 golang`) //使用反引号 可以进行字符串换行
 
+	var mystr01 string = "hello"
+	var mystr02 [5]byte = [5]byte{104, 101, 108, 108, 111}
+	fmt.Printf("myStr01: %s\n", mystr01)
+	fmt.Printf("myStr02: %s", mystr02)
 }
