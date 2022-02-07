@@ -29,4 +29,8 @@ func main() {
 	stringBuilder.WriteString(str1)
 	stringBuilder.WriteString(str2)
 	fmt.Println(stringBuilder.String())
+
+	// 从字符串 hello 世界 中获取 世
+	var myStr01 string = "hello,世界"
+	fmt.Println(string([]rune(myStr01)[6]))
 }
