@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
 	"unicode/utf8"
 )
@@ -13,4 +14,19 @@ func main() {
 	fmt.Println(len(str4))                    // 1个中文占3个字节，go从底层支持utf8
 	fmt.Println(utf8.RuneCountInString(str4)) // 2
 
+	// 字符串拼接
+	s := "第一部分" + "第二部分"
+	fmt.Println(s)
+
+	str := "hel" + "lo,"
+	str += "world!"
+	fmt.Println(str) //输出 “hello, world!”
+
+	str1 := "你好,"
+	str2 := "世界"
+	var stringBuilder bytes.Buffer
+	//节省内存分配，提高处理效率
+	stringBuilder.WriteString(str1)
+	stringBuilder.WriteString(str2)
+	fmt.Println(stringBuilder.String())
 }
